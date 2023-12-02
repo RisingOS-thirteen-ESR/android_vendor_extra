@@ -20,3 +20,6 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 PRODUCT_PACKAGES += \
     Cromite \
     CromiteOverlayResources
+
+# Inherit private extra if exists
+$(call inherit-product-if-exists, vendor/extra-priv/product.mk)
