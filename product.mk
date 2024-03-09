@@ -18,7 +18,7 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Cromite
 PRODUCT_PACKAGES += \
-    Cromite \
+    CromitePrebuilt \
     CromiteOverlayResources
 
 # Inherit private extra if exists
