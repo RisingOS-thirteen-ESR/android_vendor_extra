@@ -16,9 +16,15 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Cromite
+# Extra packages
 PRODUCT_PACKAGES += \
     CromitePrebuilt \
+    Eleven \
+    ExactCalculator \
+    GlimpsePrebuilt
+
+# Overlays
+PRODUCT_PACKAGES += \
     CromiteOverlayResources
 
 # Inherit private extra if exists
